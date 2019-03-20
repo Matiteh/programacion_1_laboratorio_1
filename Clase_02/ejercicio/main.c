@@ -24,41 +24,35 @@
 
 int main()
 {
+    int i;
     int maximo;
     int minimo;
     int acumulador;
-    int auxiliarInt;
-    int i;
+    int numero;
 
-    // Solicito el primer número el cual por ser el primero sera tanto el
-    // maximo como el minimo y el primer numero a ser acumulado
-    printf("Ingrese un numero: ");
-    scanf("%d",&auxiliarInt);
-    maximo = auxiliarInt;
-    minimo = auxiliarInt;
-    acumulador = auxiliarInt;
+    printf("Ingrese un numero:\n");
+    scanf("%d/n",&numero);
+    maximo=numero;
+    minimo=numero;
+    acumulador=numero;
 
-    // Solicito el resto de los numeros
-    for(i=0;i<4;i++)
-    {
-        printf("Ingrese un numero: ");
-        scanf("%d",&auxiliarInt);
-        acumulador = acumulador + auxiliarInt;
-
-        if(auxiliarInt > maximo)
+    for (i=0;i<4;i++)
         {
-            maximo = auxiliarInt;
-        }
+            printf("Ingrese un numero:\n");
+            scanf("%d/n",&numero);
+            acumulador=acumulador+numero;
 
-        if(auxiliarInt < minimo)
-        {
-            minimo = auxiliarInt;
+            if(numero>maximo)
+            {
+                maximo=numero;
+            }
+            if(numero<minimo)
+            {
+                minimo=numero;
+            }
         }
-    }
-
-    printf("El maximo es: %i\n",maximo);
-    printf("El minimo es: %i\n",minimo);
-    printf("El promedio es: %f\n", ((float)acumulador) / 5);
+        printf("El promedio es: %d\n",(acumulador/5));
+        printf("El maximo es: %d\n",maximo);
+        printf("El minimo es: %d\n",minimo);
     return 0;
-
 }
