@@ -54,3 +54,9 @@ I.	Se deberá desarrollar bibliotecas por cada entidad, las cuales contendrán las
 II.	Las validaciones deberán estar en una biblioteca aparte. 
 III.	Tener en cuenta que no se podrá ingresar a los casos Modificar, Baja y Listar; sin antes haber realizado al menos un Alta (utilizar contadores).
 IV.	El código deberá tener comentarios con la documentación de cada una de las funciones y respetar las reglas de estilo de la cátedra.
+
+main.c
+empleado.c
+empleado.h
+input.c
+input.h
